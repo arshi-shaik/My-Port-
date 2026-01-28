@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <div class="logo">Your Name</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Simple theme toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">☾</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Animation -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-tagline">Front-end Developer • Hyderabad</p>
+        <h1 class="hero-title">
+          Crafting clean, interactive
+          <span class="animate-text">web experiences.</span>
+        </h1>
+        <p class="hero-subtitle">
+          I design and build responsive UIs using HTML, CSS, JavaScript, and Express-powered backends.
+        </p>
+        <div class="hero-actions">
+          <a href="#gallery" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn ghost-btn">Let’s Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <!-- Replace with your own image -->
+          <img src="https://via.placeholder.com/260x260?text=Your+Photo" alt="Your portrait" />
+        </div>
+        <div class="hero-card hero-card-1">HTML • CSS • JS</div>
+        <div class="hero-card hero-card-2">Express • Git • GitHub</div>
+      </div>
+    </div>
+
+    <!-- Floating shapes -->
+    <div class="floating-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hi, I’m <strong>Your Name</strong>, a web developer from Hyderabad focused on building interactive,
+            performant, and accessible user interfaces.
+          </p>
+          <p>
+            I enjoy turning ideas into experiences using HTML, CSS, JavaScript, and Express for backends, with Git
+            and GitHub for version control.
+          </p>
+
+          <div class="quick-facts">
+            <div class="fact">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English, Telugu, Hindi</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Current Focus</span>
+              <span class="fact-value">Responsive UI, JS OOP, Express APIs</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Interests</span>
+              <span class="fact-value">Coding, spa & wellness, clean UX</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-extra">
+          <h3>What I bring</h3>
+          <ul class="about-list">
+            <li>Pixel-conscious layouts with consistent spacing and typography.</li>
+            <li>Interactive elements with smooth hover and scroll-triggered animations.</li>
+            <li>Clean, version-controlled codebases ready for collaboration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Front-end</h3>
+          <p>HTML5, semantic layouts, modern CSS, Flexbox, Grid, responsive design.</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM, events, OOP in JS, basic animations, API integration.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Node.js with Express, routing, simple REST APIs, JSON handling.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, CLI, VS Code, browser DevTools, basic deployment flows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Hobbies & Inspirations</h2>
+      <p class="section-intro">
+        A snapshot of what keeps me curious and inspired—code, calm, and clean design.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/500x350?text=Code+Experiments" alt="Code experiments" />
+          <div class="gallery-caption">Front-end Experiments</div>
+          <div class="overlay">
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="gallery-item tall">
+          <img src="https://via.placeholder.com/500x650?text=Spa+%26+Wellness" alt="Spa and wellness" />
+          <div class="gallery-caption">Spa & Wellness</div>
+          <div class="overlay">
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="gallery-item wide">
+          <img src="https://via.placeholder.com/700x350?text=Git+Workflows" alt="Git workflows" />
+          <div class="gallery-caption">Git Workflows</div>
+          <div class="overlay">
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/500x350?text=Clean+UI" alt="Minimal UI inspiration" />
+          <div class="gallery-caption">Minimal UI</div>
+          <div class="overlay">
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img src="" alt="Gallery preview" class="lightbox-img" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">
+        Have an opportunity, collaboration, or question? I’d love to hear from you.
+      </p>
+      <div class="contact-details">
+        <div>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></div>
+        <div>Location: Hyderabad, Telangana, India</div>
+        <div>
+          GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a> |
+          LinkedIn: <a href="https://linkedin.com/in/yourhandle" target="_blank">Your Name</a>
+        </div>
+      </div>
+      <!-- Optional resume button -->
+      <a href="assets/YourName-Resume.pdf" class="btn primary-btn resume-btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
