@@ -36,7 +36,6 @@ body {
   line-height: 1.7;
 }
 
-/* Layout helpers */
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -113,7 +112,6 @@ body {
   width: 100%;
 }
 
-/* Theme toggle */
 .theme-toggle {
   border: none;
   background: var(--bg-alt);
@@ -381,7 +379,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Skills */
+/* Skills & cards grid */
 .skills {
   background: var(--bg-alt);
 }
@@ -412,7 +410,7 @@ body {
   color: var(--muted);
 }
 
-/* Gallery (masonry-like) */
+/* Gallery */
 .gallery-grid {
   columns: 2 260px;
   column-gap: 1.5rem;
