@@ -410,107 +410,6 @@ body {
   color: var(--muted);
 }
 
-/* Gallery */
-.gallery-grid {
-  columns: 2 260px;
-  column-gap: 1.5rem;
-}
-
-.gallery-item {
-  position: relative;
-  border-radius: 1.1rem;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  break-inside: avoid;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.15);
-  transform: translateY(0);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.gallery-item img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.06);
-}
-
-.gallery-caption {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  background: rgba(15, 23, 42, 0.85);
-  color: #f9fafb;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
-
-.view-btn {
-  border-radius: 999px;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-  background: #f9fafb;
-  color: #111827;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.28);
-  transition: transform 0.18s ease;
-}
-
-.view-btn:hover {
-  transform: translateY(-1px);
-}
-
-/* Lightbox */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.92);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 60;
-}
-
-.lightbox.active {
-  display: flex;
-}
-
-.lightbox-img {
-  max-width: min(92vw, 900px);
-  max-height: 88vh;
-  border-radius: 1rem;
-  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.6);
-}
-
-.close {
-  position: absolute;
-  top: 1.8rem;
-  right: 2.2rem;
-  font-size: 2rem;
-  color: #e5e7eb;
-  cursor: pointer;
-}
-
 /* Contact */
 .contact {
   background: var(--bg-alt);
@@ -524,10 +423,6 @@ body {
 
 .contact-details div + div {
   margin-top: 0.35rem;
-}
-
-.contact a {
-  color: var(--accent);
 }
 
 .resume-btn {
@@ -600,8 +495,13 @@ body {
   .section {
     padding: 4rem 0;
   }
+}
 
-  .gallery-grid {
-    columns: 1 260px;
-  }
+/* ---- link color fixes (no blue) ---- */
+a {
+  color: var(--text);
+}
+
+.contact a {
+  color: var(--text);
 }
